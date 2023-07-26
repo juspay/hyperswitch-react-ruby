@@ -27,11 +27,20 @@ Don't have a Hyperswitch account? [Sign up here!](https://app.hyperswitch.io/reg
 ~~~
 npm install
 ~~~
+~~~
+bundle install
+~~~
 
-3. Run the development server:
+3. Run the server:
 
 ~~~
-npm start
+ruby server.rb -o 0.0.0.0
+~~~
+
+4. Run the client:
+
+~~~
+npm run start-client
 ~~~
 
 Runs the app in the development mode.\
