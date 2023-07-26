@@ -39,7 +39,7 @@ npm run start-server
 
 Runs the backend server in the development mode.
 
-3. Run the client :
+4. Run the client :
 
 ~~~
 npm run start-client
