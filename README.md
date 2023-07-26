@@ -1,4 +1,4 @@
-# Hyperswitch React + Node Integration
+# Hyperswitch React + Ruby Integration
 
 Build a simple checkout web-app to collect payment details and make a dummy payment. Included are some basic build and run scripts you can use to run the demo application.
 
@@ -8,7 +8,7 @@ This demo application uses the following tech-stack :
 
 **Frontend :** `React` with `JavaScript`
 
-**Backend :** `Node`  
+**Backend :** `Ruby`  
 
 ## Prerequisites
 
