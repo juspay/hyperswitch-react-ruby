@@ -21,6 +21,12 @@ end
 post '/create-payment' do
 
   data = JSON.parse(request.body.read)
+  
+  # If you have two or more “business_country” + “business_label” pairs configured in your Hyperswitch dashboard,
+  # please pass the fields business_country and business_label in this request body.
+  # For accessing more features, you can check out the request body schema for payments-create API here :
+  # https://api-reference.hyperswitch.io/docs/hyperswitch-api-reference/60bae82472db8-payments-create
+         
   payload = { amount: calculate_order_amount(data['items']), currency: 'USD' }.to_json
   uri = URI.parse(hyper_switch_api_base_url)
   http = Net::HTTP.new(uri.host, uri.port)
