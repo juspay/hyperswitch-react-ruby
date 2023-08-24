@@ -27,7 +27,7 @@ post '/create-payment' do
   # For accessing more features, you can check out the request body schema for payments-create API here :
   # https://api-reference.hyperswitch.io/docs/hyperswitch-api-reference/60bae82472db8-payments-create
          
-  payload = { amount: calculate_order_amount(data['items']), currency: 'USD' }.to_json
+  payload = { amount: calculate_order_amount(data['items']), currency: 'USD', customer_id: 'hyperswitch_customer' }.to_json
   uri = URI.parse(hyper_switch_api_base_url)
   http = Net::HTTP.new(uri.host, uri.port)
   http.use_ssl = true
